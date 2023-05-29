@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> 
+</head>
+<body>
+    <img id="banner" src="{% static 'img/home.jpg' %}" alt="">
+    <div id="menu">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+    </ul>
+</div>
+<!-- KELAS CONTAINER BOOTSTRAP -->
+<div class="container">
+    <br>
+    <div class="jumbotron">
+        <h1 class="display-4">selamat datang di era industri 4.0</h1>
+        <p class="lead">topik Revolusi industri 4.0 :</p>
+            <hr class="my-4">
+            <p>Internet of things</p>
+            <hr class="my-4">
+            <p>Cloud Computing</p>
+            <hr class="my-4">
+            <p>Machine Learning</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">topik Lainnya</a>
+    </div>
+</div>
+
+<!-- FOOTER -->
+    <Footer class="footer">
+        <div class="container">
+            <span class="text-dark"> Copyright 2022</span>
+        </div>
+    </Footer>
+
+
+<!-- JS BOOOSTRAP -->
+    <script src="{% static 'vendor/bootstrap/jquery-3.3.1.slim.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendor/bootstrap/popper.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendor/bootstrap/bootstrap.js' %}" type="text/javascript"></script>
+
+</body>
+</html>
